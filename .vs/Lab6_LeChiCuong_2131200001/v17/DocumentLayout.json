@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CSE443\\Lab6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|d:\\cse443\\lab6\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|d:\\cse443\\lab6\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|d:\\cse443\\lab6\\views\\admin\\bookmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|solutionrelative:views\\admin\\bookmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|d:\\cse443\\lab6\\views\\admin\\usertable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|solutionrelative:views\\admin\\usertable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|d:\\cse443\\lab6\\views\\book\\pageprogrammingbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|solutionrelative:views\\book\\pageprogrammingbook.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|d:\\cse443\\lab6\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|d:\\cse443\\lab6\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{39D73749-5831-4CF8-ADCB-FB9AE2658990}|Lab6_LeChiCuong_2131200001.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Book.cs",
+              "DocumentMoniker": "D:\\CSE443\\Lab6\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "D:\\CSE443\\Lab6\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T12:49:47.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PageProgrammingBook.cshtml",
+              "DocumentMoniker": "D:\\CSE443\\Lab6\\Views\\Book\\PageProgrammingBook.cshtml",
+              "RelativeDocumentMoniker": "Views\\Book\\PageProgrammingBook.cshtml",
+              "ToolTip": "D:\\CSE443\\Lab6\\Views\\Book\\PageProgrammingBook.cshtml",
+              "RelativeToolTip": "Views\\Book\\PageProgrammingBook.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T03:37:27.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\CSE443\\Lab6\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
+              "ToolTip": "D:\\CSE443\\Lab6\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Controllers\\BookController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAF0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T03:26:46.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookManagement.cshtml",
+              "DocumentMoniker": "D:\\CSE443\\Lab6\\Views\\Admin\\BookManagement.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\BookManagement.cshtml",
+              "ToolTip": "D:\\CSE443\\Lab6\\Views\\Admin\\BookManagement.cshtml",
+              "RelativeToolTip": "Views\\Admin\\BookManagement.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T03:25:16.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserTable.cshtml",
+              "DocumentMoniker": "D:\\CSE443\\Lab6\\Views\\Admin\\UserTable.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\UserTable.cshtml",
+              "ToolTip": "D:\\CSE443\\Lab6\\Views\\Admin\\UserTable.cshtml",
+              "RelativeToolTip": "Views\\Admin\\UserTable.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T01:34:23.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\CSE443\\Lab6\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\CSE443\\Lab6\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-24T01:31:49.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\CSE443\\Lab6\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "D:\\CSE443\\Lab6\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T01:25:52.395Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
