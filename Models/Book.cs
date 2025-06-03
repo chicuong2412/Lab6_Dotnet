@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Lab3_LeChiCuong_2131200001.Models
+namespace Lab6_LeChiCuong_2131200001.Models
 {
     public class Book
     {
@@ -42,6 +42,12 @@ namespace Lab3_LeChiCuong_2131200001.Models
         public ICollection<Category> Categories { get; set; } = new List<Category>();
 
         public ICollection<Author> Authors { get; set; } = new List<Author>();
+
+        [NotMapped]
+        public List<int>? SelectedCategoryIds { get; set; }
+
+        [NotMapped]
+        public List<int>? SelectedAuthorIds { get; set; }
 
     }
 }

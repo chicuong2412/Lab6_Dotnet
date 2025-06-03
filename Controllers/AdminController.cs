@@ -1,9 +1,10 @@
-﻿using Lab3_LeChiCuong_2131200001.Data;
+﻿using Lab6_LeChiCuong_2131200001.Data;
+using Lab6_LeChiCuong_2131200001.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lab3_LeChiCuong_2131200001.Controllers
+namespace Lab6_LeChiCuong_2131200001.Controllers
 {
     public class AdminController : Controller
     {
@@ -23,9 +24,13 @@ namespace Lab3_LeChiCuong_2131200001.Controllers
             return View();
         }
 
-        public IActionResult UserTable()
+        public async Task<IActionResult> UserTable()
         {
-            return View();
+            var list = await _context.Users
+                .Include(u => u.UserRoles)
+                    .ThenInclude(ur => ur.Role)
+                .ToListAsync();
+            return View(list);
         }
 
         public async Task<IActionResult> BookManagement()
@@ -35,6 +40,25 @@ namespace Lab3_LeChiCuong_2131200001.Controllers
                    .Include(author => author.Authors)
                .ToListAsync();
             return View(books);
+        }
+
+        public async Task<IActionResult> CategoryManagement()
+        {
+
+            return View(await _context.Categories.ToListAsync());
+        }
+
+        public async Task<IActionResult> AuthorManagement()
+        {
+            return View(await _context.Authors.ToListAsync());
+        }
+
+        public async Task<IActionResult> LoanManagement()
+        {
+            return View(await _context.Loans
+                .Include(a => a.User)
+                .Include(a => a.Book)
+                .ToListAsync());
         }
     }
 }

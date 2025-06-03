@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Lab3_LeChiCuong_2131200001.Models
+namespace Lab6_LeChiCuong_2131200001.Models
 {
     public class Loan
     {
@@ -8,7 +8,7 @@ namespace Lab3_LeChiCuong_2131200001.Models
         public int LoanId { get; set; }
 
         [Required(ErrorMessage = "LoanDate is required.")]
-        public DateTime LoanDate { get; set; } = DateTime.Now;
+        public DateTime? LoanDate { get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "DueDate is required.")]
         public DateTime DueDate { get; set; }
@@ -19,11 +19,11 @@ namespace Lab3_LeChiCuong_2131200001.Models
 
         public int UserId { get; set; }
 
-        public User User { get; set; }
+        public User? User { get; set; }
 
         public int BookId { get; set; }
 
-        public Book Book { get; set; }
+        public Book? Book { get; set; }
 
     }
 }

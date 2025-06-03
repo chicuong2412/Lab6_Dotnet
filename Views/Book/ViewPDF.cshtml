@@ -11,7 +11,7 @@
 @{
     if (!ViewBag.Error)
     {
-        <iframe src="/assets/pdf/@Model.Pdf" width="100%" style="min-height: 80vh">
+        <iframe src="@Url.Action("GetPdf", "Book", new { fileName = Model.Pdf })" width="100%" style="min-height: 80vh">
         </iframe>
     } else
     {

@@ -1,14 +1,14 @@
 ﻿using System.Text.Json.Serialization;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Lab3_LeChiCuong_2131200001.Data;
-using Lab3_LeChiCuong_2131200001.Models;
+using Lab6_LeChiCuong_2131200001.Data;
+using Lab6_LeChiCuong_2131200001.Models;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace Lab3_LeChiCuong_2131200001.Controllers
+namespace Lab6_LeChiCuong_2131200001.Controllers
 {
     [Route("Book")]
     public class BookController : Controller
@@ -26,6 +26,7 @@ namespace Lab3_LeChiCuong_2131200001.Controllers
 
         }
 
+        [HttpGet()]
         public async Task<IActionResult> Index([FromQuery] string bookCode)
         {
             var book = await _context.Books
@@ -34,6 +35,7 @@ namespace Lab3_LeChiCuong_2131200001.Controllers
             return View(book);
         }
 
+        [HttpGet("PageProgrammingBook")]
         public async Task<IActionResult> PageProgrammingBook()
         {
 
@@ -44,6 +46,7 @@ namespace Lab3_LeChiCuong_2131200001.Controllers
             return View(books);
         }
 
+        [HttpGet("pageFictionBook")]
         public async Task<IActionResult> PageFictionBook()
         {
 
@@ -54,15 +57,16 @@ namespace Lab3_LeChiCuong_2131200001.Controllers
             return View(books);
         }
 
+        [HttpGet("ViewPDF")]
         public async Task<IActionResult> ViewPDF([FromQuery] string bookCode)
         {
 
             var book = await _context.Books
-                .Include(book => book.Categories)
                 .FirstOrDefaultAsync(book => book.BookCode == bookCode);
 
             if (book == null)
             {
+                Console.WriteLine(bookCode);
                 ViewBag.Error = true;
                 ViewBag.ErrorMessage = "PDF path does not exist";
             }
@@ -77,7 +81,21 @@ namespace Lab3_LeChiCuong_2131200001.Controllers
                     ViewBag.Error = false;
                 }
             }
+
             return View(book);
+        }
+
+        [HttpGet("getPdf/{fileName}")]
+        public IActionResult GetPdf(string fileName)
+        {
+            var filePath = Path.Combine(_env.WebRootPath, "assets/pdf", fileName);
+            if (!System.IO.File.Exists(filePath))
+            {
+                return NotFound();
+            }
+            var fileBytes = System.IO.File.ReadAllBytes(filePath);
+            Response.Headers["Content-Disposition"] = "inline; filename={fileName}";
+            return File(fileBytes, "application/pdf");
         }
 
         [HttpGet("getBookById/{id:int}")]
@@ -92,6 +110,8 @@ namespace Lab3_LeChiCuong_2131200001.Controllers
                 ReferenceHandler = ReferenceHandler.Preserve
             });
         }
+
+
 
     }
 }

@@ -1,4 +1,4 @@
-namespace Lab3_LeChiCuong_2131200001.Models
+namespace Lab6_LeChiCuong_2131200001.Models
 {
     public class ErrorViewModel
     {

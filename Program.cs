@@ -1,4 +1,4 @@
-using Lab3_LeChiCuong_2131200001.Data;
+using Lab6_LeChiCuong_2131200001.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

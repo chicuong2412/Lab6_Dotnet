@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Lab3_LeChiCuong_2131200001.Controllers
+namespace Lab6_LeChiCuong_2131200001.Controllers
 {
     public class AuthenticateController : Controller
     {

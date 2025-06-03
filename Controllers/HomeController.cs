@@ -1,10 +1,10 @@
 using System.Diagnostics;
-using Lab3_LeChiCuong_2131200001.Data;
-using Lab3_LeChiCuong_2131200001.Models;
+using Lab6_LeChiCuong_2131200001.Data;
+using Lab6_LeChiCuong_2131200001.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lab3_LeChiCuong_2131200001.Controllers
+namespace Lab6_LeChiCuong_2131200001.Controllers
 {
     public class HomeController : Controller
     {

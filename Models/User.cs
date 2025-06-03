@@ -1,7 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Lab6_LeChiCuong_2131200001.Models;
 
-namespace Lab3_LeChiCuong_2131200001.Models
+namespace Lab6_LeChiCuong_2131200001.Models
 {
     public class User
     {
@@ -12,7 +13,7 @@ namespace Lab3_LeChiCuong_2131200001.Models
         [Column(TypeName = "nvarchar(200)")]
         public string Fullname { get; set; }
         [Column(TypeName = "nvarchar(max)")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Required(ErrorMessage = "Email is required.")]
         [EmailAddress(ErrorMessage = "Invalid email address.")]
@@ -27,9 +28,9 @@ namespace Lab3_LeChiCuong_2131200001.Models
         [Phone(ErrorMessage = "Invalid phone number.")]
         [Column(TypeName = "nvarchar(20)")]
         public string Phone { get; set; }
-        public string Address { get; set; }
-        public int Status { get; set; }
-        public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public string? Address { get; set; }
+        public int? Status { get; set; }
+        public DateTime? CreatedDate { get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "User code is required.")]
         [Column(TypeName = "nvarchar(max)")]
@@ -48,6 +49,11 @@ namespace Lab3_LeChiCuong_2131200001.Models
         public string Avatar { get; set; } = string.Empty;
 
         public ICollection<Loan> Loans { get; set; } = new List<Loan>();
+
+        public ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
+
+        [NotMapped]
+        public List<int> SelectedRoleIds { get; set; }
 
     }
 }

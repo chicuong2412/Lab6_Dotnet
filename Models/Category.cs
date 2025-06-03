@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
-namespace Lab3_LeChiCuong_2131200001.Models
+namespace Lab6_LeChiCuong_2131200001.Models
 {
     public class Category
     {
@@ -13,19 +13,19 @@ namespace Lab3_LeChiCuong_2131200001.Models
         public string Name { get; set; }
 
         [Column(TypeName = "nvarchar(MAX)")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Column(TypeName = "datetime")]
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; } = DateTime.Now;
 
         [Column(TypeName = "datetime")]
-        public DateTime UpdatedDate { get; set; }
+        public DateTime UpdatedDate { get; set; } = DateTime.Now;
 
         [Column(TypeName = "bit")]
-        public bool IsActive { get; set; }
+        public bool IsActive { get; set; } = true;
 
         [Column(TypeName = "nvarchar(MAX)")]
-        public string Avatar { get; set; }
+        public string? Avatar { get; set; }
 
         public ICollection<Book> Books { get; set; } = new List<Book>();
 

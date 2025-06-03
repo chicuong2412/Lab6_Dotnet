@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Lab3_LeChiCuong_2131200001.Migrations
+namespace Lab6_LeChiCuong_2131200001.Migrations
 {
     /// <inheritdoc />
     public partial class Second : Migration
